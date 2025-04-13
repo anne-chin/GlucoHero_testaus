@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GlucoHero Enter New Diary</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/css/style.css">
+  </head>
+
+  <body>
+    <header>      
+        <a href="#home" class="active">
+        <img src="/src/img/logo.png" href=".../index.html" id="logo">
+        </a>
+    </header>    
+<div class="container">
+    <form class="diary">
+    <div class="row">
+      <div class="col-25">
+        <label for="datetime">Date & Time</label>
+      </div>
+      <div class="col-75">
+        <input type="date" id="timing" name="date">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="bsvalue">Blood sugar</label>
+      </div>
+      <div class="col-75">
+        <input type="number" id="bs" name="bs" placeholder="Check from Libre Sensor">
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+            <label for="dosage">Dose</label>
+        </div>
+        <div class="col-75">
+            <input type="number" id="dose" placeholder="IU">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+            <label for="insulin">Medicine</label>
+        </div>
+        <div class="col-75">
+            <input type="text" id="insulin" placeholder="name">
+        </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-25">
+        <label for="giver">Care giver</label>
+      </div>
+      <div class="col-75">
+        <select id="giver" name="giver">
+          <option value="parents">Parents</option>
+          <option value="daycare">Day Care</option>
+          <option value="other">Others, please specify in notes</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="note">Note</label>
+      </div>
+      <div class="col-75">
+        <textarea id="note" name="note" placeholder="eg. What was served? Carbs in grams and how much eaten?" style="height:50px"></textarea>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <input id="submitbtn" type="submit" value="Submit" class="formpost">
+    </div>
+    </form>
+
+    <script type="module" src="/src/js/diary.js"></script>
+    <footer>
+        <p>Anne's final project for Web Development course</p>
+      </footer>
+  
+ 
+  </body>
+</html>

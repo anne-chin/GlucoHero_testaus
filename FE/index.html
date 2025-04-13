@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>GlucoHero</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/js/main.js"></script>
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">
+      <img src="/src/img/logo.png" id="logo">
+      </a>
+      <a href="./src/pages/auth.html">Register & Login</a>
+      <a href="./src/pages/apitest.html">API</a>
+      <a href="src/pages/homepage.html">Home</a>
+      <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div class="container" id="container1">
+      <h2 id="tagline">Support & empowering your little hero’s health journey at every steps, together!</h2>
+      <br/>
+      <br/>
+      <div id="text">
+        <p>Real-time updates, personalized health insights and communicate with just one application.</p>
+      </div>
+      
+    </div>
+   
+    <div class="container" id="container2">
+      <div class="containerLeft">
+        <img alt="proto" id="proto" src="/src/img/proto.png">
+
+      </div>
+      <div class="containerRight">
+        <p>
+          GlucoHero is an innovative online web-based application designed to monitor the glucose levels of junior type 1 diabetic patients. It serves as a comprehensive platform that facilitates seamless communication between schools and guardians, ensuring the well-being and safety of young patients.
+        </p>
+        <div class="containerRightBtn">
+        <button class="button" type="button" id="createAccount">CREATE YOUR GlucoHero PAGE</button>
+        <button class="button" type="button" id="learnMore">Learn more</button>
+        </div>
+
+      </div>
+    </div>
+    <div class="container" id="container3">
+      <div class="featureBox">
+        <img class=featureImg alt="Features" src="/src/img/f1.png">
+      </div>
+      <div class="featureBox">
+        <img class=featureImg alt="Features" src="/src/img/f2.png">
+      </div>
+      <div class="featureBox">
+        <img class=featureImg alt="Features" src="/src/img/f3.png">
+      </div>
+    </div>
+    
+    <div class="divider">
+      <br/>
+      <br/>
+    </div>
+
+    <div class="container" id="container4">
+      <div class="containerLeft">
+        <p class="text2">
+          What our 
+          <br/>
+          <span>users</span>
+          <br/>
+          are saying
+        </p>
+
+      </div>
+      <div class="containerRight">
+        <table style="width:100%">
+          <tr>
+            <td>The HERO</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+          </tr>
+          <tr>
+            <td>Family</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+          </tr>
+          <tr>
+            <td>Day Care</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+          </tr>
+        </table>
+        
+        </div>
+    
+    </div>
+
+    <footer>
+      <p>Anne's final project for Web Development course</p>
+    </footer>
+
+    <script>
+      function burgerMenu() {
+       let x = document.getElementById("myTopnav");
+       if (x.className === "topnav") {
+         x.className += " responsive";
+       } else {
+         x.className = "topnav";
+       }
+     };
+       </script>
+  </body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register&Login</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    p{
+      font-size: small;
+      font-family: Garamond, serif;
+      font-weight: bold;
+  }
+
+    header{
+      position: sticky;
+      top: 0;
+      padding-left: 20px;
+      background-color:white;
+    }
+
+    #logo{
+      height: 50px;
+    }
+
+    .wrapper {
+      max-width: 764px;
+      padding: 5%;
+      height: 90%;
+    }
+    main {
+      background-color: #fdcd68;
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+      height: 90%;
+    }
+
+    footer {
+      background-color: white;
+      padding: 10px;
+      text-align:center;
+      margin:auto;
+    }
+
+
+  input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+#authtest{
+  padding: 5%;
+  flex-direction: column;
+}
+
+button{
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+  </style>
+
+<body>
+  <div class="wrapper">
+    <header>      
+      <a href="#home" class="active">
+      <img src="/src/img/logo.png" href=".../index.html" id="logo">
+      </a>
+     </header>
+    <!-- parent -->
+    <main>
+      <!-- child items -->
+      <div class="container" id="left">
+        <h3>LOGIN</h3>
+        <form class="loginForm">
+          <label for="username">Username</label>
+          <input type="text" name="username" />
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+          />
+          <hr/>
+          <input
+            name="submit"
+            type="submit"
+            value="Login"
+            class="loginform"
+          />
+        </form>
+        <div id="loginResponse"></div>
+      </div>
+      <!-- flex parent -->
+      <div class="container" id="right">
+        <h3>REGISTER</h3>
+        <form class="registerForm">
+          <label for="username">Username</label>
+          <input
+            id="username"
+            type="text"
+            name="username"
+          />
+          <br/>
+          <label for="password">Password</label>
+          <input
+            id="password"
+            type="password"
+            name="password"
+          />
+          <br/>
+          <label for="email">Email</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+          />
+          <br/>
+          <label for="birthday">Birthday</label>
+          <input 
+          id="birthday"
+          type="date"
+          name="birthday">
+          <hr/>
+          <input
+            name="submit"
+            type="submit"
+            value="Register"
+            class="postuser"
+          />
+        </form>
+        </div>
+        <div id="authtest">
+          <a href="homepage.html"><button>Home view</button></a>
+          <hr/>
+
+          <button id="meRequest">Who am I?</button>
+          <hr/>
+    
+          <div id="meResponse"></div>
+          <br/>
+          <br/>
+
+          <button id="clearButton" onclick="clearstorage">Log out</button>
+          <script>
+          function clearstorage() {
+            localStorage.clear();
+            console.log('Cleared');
+         }
+         </script>
+        </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <footer>
+      <p>Anne's final project for Web Development course</p>
+    </footer>
+
+
+</body>
+
+<script type="module" src="/src/js/auth.js"></script>
+</html>

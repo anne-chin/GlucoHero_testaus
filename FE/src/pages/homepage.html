@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GlucoHero Home Page</title>
+    <meta charset="UTF-8" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      p{
+        font-size: small;
+        font-family: Garamond, serif;
+        font-weight: bold;
+    }
+
+      header{
+        position: sticky;
+        top: 0;
+        padding-left: 20px;
+      }
+
+      #logo{
+        height: 50px;
+      }
+
+      .wrapper {
+        max-width: 764px;
+        padding: 5%;
+      }
+      main {
+        background-color: #fdcd68;
+        height: 70vh;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+      }
+      #left {
+        flex: 1;
+        padding-left: 30px;
+      }
+
+      img.big{
+        max-height: 100%;
+        border-radius: 16px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+      }
+
+      img.small{
+        max-height: 175px;
+        padding-left: 5px;
+        border-radius: 16px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+      }
+
+      img:hover{
+        box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+      }
+
+      #right {
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        height: fit-content;
+      }
+      #upper {
+        flex: 1;
+      } 
+      #lower {
+        flex: 1;
+      }
+      footer {
+        background-color: white;
+        padding: 10px;
+        text-align:center;
+        margin:auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>      
+        <a href="#home" class="active">
+        <img src="/src/img/logo.png" href=".../index.html" id="logo">
+        </a>
+       </header>
+      <!-- parent -->
+      <main>
+        <!-- child items -->
+        <div id="left">
+        <a  href="diary.html"><img alt="Diary entries" class="big" src="/src/img/addNew.png"></a>
+        </div>
+        <!-- flex parent -->
+        <div id="right">
+          <!-- flex child -->
+          <div id="upper">
+            <a href="calc.html"><img alt="calculator" class="small" src="/src/img/calc.png"></a>
+            <a href="about.html"><img alt="care instrution" class="small" src="/src/img/careIns.png"></a>
+          </div>
+          <div id="lower">
+           <a href="entries.html"><img alt="check history" class="small" src="/src/img/checkHis.png"></a>
+           <a href="users.html"><img alt="TBD" class="small" src="/src/img/tbd.png" ></a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer>
+        <p>Anne's final project for Web Development course</p>
+      </footer>
+  
+ 
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GlucoHero TBD</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/css/style.css">
+  </head>
+
+  <body>
+    <header>      
+        <a href="#home" class="active"><img src="/src/img/logo.png" href=".../index.html" id="logo"></a>
+       </header>
+       <button name="get_users" value="Check entries" class="get_users">Check users
+       </button>
+        <br/>
+        <br/>
+        <br/>
+        <div class="container">
+        <table class="styled-table">
+            <thead>
+              <tr>
+                <th>User Name</th>
+                <th>Email</th>
+                <th>Info</th>
+                <th>Delete</th>
+                <th>ID</th>
+              </tr>
+            </thead>
+            <tbody id="taulukko" class="tbody">
+              <!-- tänne haetaan kaikki käyttäjät -->
+              <!-- # Get all users -->
+              <!-- GET http://127.0.0.1:3000/api/users -->
+            </tbody>
+          </table>
+        </div>
+    </div>
+    <br/>
+    <script type="module" src="/src/js/users.js"></script>
+    
+    <footer>
+        <p>Anne's final project for Web Development course</p>
+    </footer>
+  
+ 
+  </body>
+</html>
